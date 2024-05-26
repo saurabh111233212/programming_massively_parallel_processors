@@ -1,0 +1,14 @@
+name: 'Interactive Task'
+description: 'Interactive task'
+tags: []
+setup_command: 'bash setup.sh'
+command: 'cd chapter_02 && make all && make run'
+# permissions:
+#   owners: '<OD group or user>'
+#   viewers: '<OD group or user>'
+parameters:
+  learning_rate: 0.1
+  random_seed: 123
+resources:
+  num_cpus: 1
+  task_type: 1gpu
